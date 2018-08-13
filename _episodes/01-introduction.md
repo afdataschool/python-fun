@@ -214,7 +214,7 @@ def convert_date(day, month, year):
 {: .language-python}
 > ## Antibiotic Stub
 > Given the signature
-
+{: .challenge}
 
 {% include links.md %}
 
