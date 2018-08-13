@@ -119,33 +119,48 @@ A purpose statement might be:
 
 ## Stub
 
-Here, we sketch out our actual function, giving names to the input and output data. This is a lot like our
-signature, however here we start to use proper Python 3 notation: 
+Here, we sketch out our actual function, giving names to the input and output data. Soon, you will see how to do this in
+Python 3 notation, however for now, let's copy the format of our signature:
 
-Starting from the Field Trial signature, `convert_date: String String String -> String`, the 'logic' of 
-our stub becomes `convert_date: Day Month Year -> Date`.
+If our field trial signature is:
 
-In Python function definition notation, we write:
-~~~
-def convert_date(day, month, year):
-    #function body	
-    return(date)
-~~~
-{: .language-python}
+`convert_date: String String String -> String`
 
-To keep our design process all together, let's add in the signature and purpose statement:
+Then our stub might become:
 
-~~~
-#convert_date: String String String -> String
-def convert_date(day, month, year):
-    """Makes the date format yyyy-mm-dd from separate day, month, and year observations"""
-    #function body
-    return(date)
-~~~
-{: .language-python}
+`convert_date: Day Month Year -> Date`
 
-> ## Antibiotic Stub
-> Given the signature
+> ## Stub rules
+> * must have the same number of inputs and outputs as our signature
+> * must have the same function name as our signature
+> * names given to each input are the **argument variables** we pass to our function, and can be used inside our function
+> * names given to each output are the **return variables**
+{: .callout}
+
+
+> ## DNA Stub
+> Given the stub
+>
+> `compute_gc: String -> Float`
+> 
+> write the corresponding stub
 {: .challenge}
 
+> ## Antibiotic Stub
+> Given the signature:
+>
+> `mean_resistance: Float Float Float -> Float`
+>
+> which of the following is a valid stub? Which is the best stub? What would you improve?
+> 1. v1 v2 v3 -> return
+> 2. mean_resistance: diameter_one diameter_two diam_3 -> resistance
+> 3. mean_res: diam_1 diam_2 diam_3 -> lawn_area
+> 4. mean_resistance: diameter diameter diameter -> lawn_area
+> 4. mean_resistance: d1 d2 d3 -> Float
+{: .challenge}
+
+
+## Examples
+
 {% include links.md %}
+
