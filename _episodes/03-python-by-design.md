@@ -45,7 +45,6 @@ def fahr_to_celsius(temp_fahr):
 ~~~
 {: .language-python}
 
-fix me - figure
 
 The function definition opens with the keyword `def` followed by the
 name of the function (`fahr_to_celsius`) and a parenthesized list of parameter names (`temp`). The
@@ -110,6 +109,7 @@ and we have access to the value that we returned.
 >      return(temp_celsius)`
 > ~~~
 > {: .language_python}
+{: .callout}
 
 ## Composing Functions
 
@@ -334,6 +334,7 @@ instead of just `n`.
 > hm
 > ~~~
 > {: .output}
+{: .challenge}
 
 
 
