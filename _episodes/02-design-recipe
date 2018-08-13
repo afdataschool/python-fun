@@ -2,11 +2,14 @@
 title: "Design recipe"
 teaching: 30
 exercises: 30
+questions:
+objectives:
+keypoints:
 ---
 
 This design recipe can be applied to functions in any language:
 
-> ## **DESIGN RECIPE**
+> ## DESIGN RECIPE
 > 1. **Signature**: this decribes how many inputs and outputs our function has, and their type.
 > 2. **Purpose**: a short, succinct description of the task (one line max)
 > 3. **Stub**: puts names to the inputs and outputs of the function
@@ -118,6 +121,7 @@ def convert_date(day, month, year):
 {: .language-python}
 
 To keep our design process all together, let's add in the signature and purpose statement:
+
 ~~~
 #convert_date: String String String -> String
 def convert_date(day, month, year):
@@ -126,6 +130,7 @@ def convert_date(day, month, year):
     return(date)
 ~~~
 {: .language-python}
+
 > ## Antibiotic Stub
 > Given the signature
 {: .challenge}
