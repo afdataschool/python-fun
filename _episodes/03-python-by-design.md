@@ -198,18 +198,25 @@ fahr_to_celsius(fahr_temp)
 {: .output}
 
 A string like this is called a [docstring]({{ page.root }}/reference/#docstring).
-We don't need to use triple quotes when we write one,
-but if we do,
-we can break the string across multiple lines. Now, we can add in our examples:
+
+## Doctests
+
+There is a super-neat (if somewhat unpopular!) way of including examples in your
+Python documentation:
 
 ~~~
+import doctest
 def fahr_to_celsius(temp_fahr):
     '''Converts temperature in fahrenheit to temperature in celsius.
-    Example: fahr_to_celsius(52.0) => 11.1
-    Example: fahr_to_celsius(0) => -17.8'''
+    >>> fahr_to_celsius(52.0)
+    11.1
+    >>> fahr_to_celsius(0)
+    -17.8'''
+    
     temp_cels = (temp - 32) * (5/9)
     return(temp_cels)
 
+doctest.testmod()
 help(fahr_to_celsius)
 ~~~
 {: .language-python}
@@ -217,10 +224,12 @@ help(fahr_to_celsius)
 ~~~
 Help on function fahr_to_celsius in module __main__:
 
-fahr_to_celsius(fahr_temp)
-    Converts temperature in fahrenheit to temperature in celsius. 
-    Example: fahr_to_celsius(52.0) => 11.1
-    Example: fahr_to_celsius(0) => -17.8
+fahr_to_celsius(temp_fahr)
+    Converts temperature in fahrenheit to temperature in celsius.
+    >>> fahr_to_celsius(52.0)
+    11.1
+    >>> fahr_to_celsius(0)
+    -17.8
 ~~~
 {: .output}
 
@@ -265,8 +274,10 @@ We can call the function `round()` with either one or two arguments; the second 
 ~~~
 def fahr_to_celsius(temp_fahr, n=1):
     '''Converts temperature in fahrenheit to temperature in celsius.
-    Example: fahr_to_celsius(52.0) => 11.1
-    Example: fahr_to_celsius(0) => -17.8'''
+    >>> fahr_to_celsius(52.0)
+    11.1
+    >>> fahr_to_celsius(0)
+    -17.8'''
     temp_cels = round((temp - 32) * (5/9), n)
     return(temp_cels)
 
