@@ -457,7 +457,6 @@ instead of just `n`.
 {: .challenge}
 
 
-
 {% include links.md %}
 
 
