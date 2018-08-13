@@ -39,7 +39,13 @@ We might write:
 Here, `compute_gc` is the name we choose to give our funtion. Following the name, we describe a single input, of type `String`. The arrow points to the output data, of type `Float`.
 
 > ## Antibiotic signature
-> Given your answers to the antibiotic word problem above, fill in the blanks to complete this signature:
+> Fill in the blanks to complete this signature:
+>
+> 'Antibiotics are sometimes tested by 'dropping' a measured dose onto the middle of a petri dish that is 
+> covered in a bacterial 'lawn'. Resistance is measured as the area of the disk still covered by bacteria 
+> after 2 days. Bacterial death spreads out from the antibiotic drop creating a perfect bacteria-free central 
+> disk. You've recorded the diameter of several hundreds of test spots, with three replicates per plate. You want to find 
+> the average measure of resistance.' 
 >
 > ~~~
 > mean_resistance: Float ____ ____ -> ____
@@ -48,7 +54,9 @@ Here, `compute_gc` is the name we choose to give our funtion. Following the name
 {: .challenge}
 
 > ## Field data signature
-> Let's revisit our email: "The field data is back from the trial, but unfortunately I'm having a lot of 
+> Let's revisit our email: 
+>
+> "The field data is back from the trial, but unfortunately I'm having a lot of 
 > trouble loading it into the software because the assistant recorded the dates using the month's name, and 
 > it wants dates formatted like 2018-03-02, 2018-06-04, etc. Do you think you could write me a quick script 
 > to help me out?
