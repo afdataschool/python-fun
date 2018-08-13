@@ -1,3 +1,9 @@
+---
+title: "Design recipe"
+teaching: 30
+exercises: 30
+---
+
 > **DESIGN RECIPE**
 > 1. **Signature**: this decribes how many inputs and outputs our function has, and their type.
 > 2. **Purpose**: a short, succinct description of the task (one line max)
@@ -9,8 +15,14 @@
 
 ## Signature
   
-The signature formalises the process of describing our function's inputs and outputs. Taking the 
-'DNA' example above, we might write:
+The signature formalises the process of describing our function's inputs and outputs. Let's consider our DNA example again:
+
+> The component acids that form DNA are often represented as 'A', 'T', 'G', and 'C'. The amount of 'G' and 'C' in 
+> a DNA sequence tends to be organism specific. You've received some sequence data from a service provider,
+> and as a simple test of contamination you want to check its GC ratio.
+{: callout}
+
+We might write:
 
 `compute_gc: String -> Float`
 
@@ -39,21 +51,13 @@ Here, `compute_gc` is the name we choose to give our funtion. Following the name
 > 5. `convert_date: String String String -> Int Int Int`
 {: .challenge}
 
-> ## DNA signature.
->
-> Formalise a signature for your DNA word problem: 
->
-> 'The component acids that form DNA are often represented as 'A', 'T', 'G', and 'C'. The amount of 'G' 
-> and 'C' in a DNA sequence tends to be organism specific. You've got received some sequence data from 
-> a service provider, and as a simple test of contamination you want to check its GC ratio.
-{: .challenge}
 
 ## Purpose
 
 This one sounds deceptively easy: in one sentence (say, 80 characters max), describe what your function does.
 
 > Purpose statement guidelines:
-> * Avoid repeating the word problem. It likely contains extra 'tasks' that you're function *doesn't* actually do.
+> * Avoid repeating the word problem. It likely contains extra 'tasks' that you're function *doesn't* or *shouldn't* actually do.
 > * Don't repeat info that is in the signature. There is no need for the name of the function, or a description
 > of its inputs and outputs.
 > * Keep it as generic as possible. If it calculates the area of a rectangle, say it calculates the area of a rectangle. Don't say, it gives the area of a Boorowa field plot. 
