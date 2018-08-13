@@ -186,6 +186,7 @@ Working out your boundary conditions, and including them as examples in your fun
 In our 'generic' function design recipe, you can formulate your examples just like your signature and stub:
 
 `compute_gc: T -> 0.0`
+
 `compute_gc: GGGGGGGGG -> 100.0`
 
 > ## DNA
