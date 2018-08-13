@@ -90,7 +90,6 @@ After I've worked out the data (it can help to use a highlighter to start with!)
 > define whether your function is working correctly, and in fact to know what you want to code in the first 
 > place!
 > This is where a 'Design Recipe' can help, by forcing you to answer these questions before you write code.
-{: callout}
+{: .callout}
 
 {% include links.md %}
-
