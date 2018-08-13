@@ -162,5 +162,42 @@ Then our stub might become:
 
 ## Examples
 
+Examples are the most important part of your function design recipe, and often the most overlooked! If you can master the art of writing good examples, then you will be able to write code that works, is easy to read, and is easy to debug.
+
+Example guidelines
+ * choose 3 or 4 well-thought out examples
+ * try and find 'boundary' conditions.
+ * for now, design examples that are **meant** to work, rather designing examples to break your code. 
+
+> ## Boundary conditions
+> 
+> What are boundary conditions? It's often easy to write code that works for the main way you expect people to use your function.
+> But what about situations you haven't thought of? Or that are unusual. Let's consider our DNA example. We might expect 
+> most DNA input sequences to look something like:
+> `ATCCTGTTTAGGATCGT`
+> Some example 'boundaries' might include:
+> * `T` - only one base in the sequence
+> *  `GGGGGGGGGG` - all bases in the sequence identical
+> * `TGgggTCaGtnAAa`- sequence contains mix of capital and lower case letters, or 'n'
+{: .callout}
+
+Working out your boundary conditions, and including them as examples in your function documentation, is what really defines how your function should behave. Not only does it help you write the function, it also tells anyone else who uses it or reads it exactly what to expect. 
+
+In our 'generic' function design recipe, you can formulate your examples just like your signature and stub:
+
+`compute_gc: T -> 0.0`
+`compute_gc: GGGGGGGGG -> 100.0`
+
+> ## DNA
+>
+> write an example based on the boundary condition `TGgggTCaGtnAAa`
+{: .challenge}
+
+> ## Boundaries and examples
+> 
+> Write out boundary conditions and examples for the field trial and antibiotic exercises. 
+{: .challenge}
+
+
 {% include links.md %}
 
