@@ -30,7 +30,7 @@ len(first_name)
 ~~~
 {: .output}
 
-Here, we've called the fuction `len()`, with the input data `first_name`, and recieved some output data `7`. We don't see the internal workings or calculations of the function, len() is essentially a black box that does some processing.
+Here, we've called the fuction `len()`, with the input data `first_name`, and received some output data `7`. We don't see the internal workings or calculations of the function, len() is essentially a black box that does some processing.
 
 > ## Input and output data
 > Describe the input and output of the following build in fuctions:
