@@ -51,6 +51,9 @@ summative: from word problem to design recipe.
 
 - 
 
+## fix-me
+
+more function examples that use if-else and loops
 
 
 {% include links.md %}
